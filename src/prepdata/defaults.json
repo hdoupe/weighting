@@ -1,0 +1,2413 @@
+{
+  "schema": {
+    "labels":{},
+    "additional_members": {
+            "section_1": {
+                "type": "str",
+                "number_dims": 0
+            }
+        }
+
+  },
+  "N1_agi1":{
+    "title": "Population",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS1_agi1":{
+    "title": "Number of Single Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS2_agi1":{
+    "title": "Number of Joint Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00100_agi1":{
+    "title": "AGI Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00200_agi1":{
+    "title": "Salary and Wage Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00200_agi1":{
+    "title": "Number of Returns with Nonzero Salary and Wage",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01000_agi1":{
+    "title": "Capital Gains Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N01000_agi1":{
+    "title": "Number of Returns with Nonzero Capital Gains",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04470_agi1":{
+    "title": "Itemized Deduction Amount (0 if Standard Deduction)",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04470_agi1":{
+    "title": "Number of Returns that Itemize Deductions",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A17000_agi1":{
+    "title": "Medical Expenses Deducted Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N17000_agi1":{
+    "title": "Number of Returns that Deduct Medical Expenses",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04800_agi1":{
+    "title": "Taxable Income Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04800_agi1":{
+    "title": "Number of Returns with Nonzero Taxable Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A05800_agi1":{
+    "title": "Regular Tax Before Credits Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N05800_agi1":{
+    "title": "Number of Returns with Nonzero Regular Tax Before Credits",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A09600_agi1":{
+    "title": "AMT Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N09600_agi1":{
+    "title": "Number of Returns with Nonzero AMT",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00700_agi1":{
+    "title": "SALT Deduction Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00700_agi1":{
+    "title": "Number of Returns with Nonzero SALT Deduction",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 1 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N1_agi2":{
+    "title": "Population",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS1_agi2":{
+    "title": "Number of Single Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS2_agi2":{
+    "title": "Number of Joint Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00100_agi2":{
+    "title": "AGI Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00200_agi2":{
+    "title": "Salary and Wage Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00200_agi2":{
+    "title": "Number of Returns with Nonzero Salary and Wage",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01000_agi2":{
+    "title": "Capital Gains Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N01000_agi2":{
+    "title": "Number of Returns with Nonzero Capital Gains",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04470_agi2":{
+    "title": "Itemized Deduction Amount (0 if Standard Deduction)",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04470_agi2":{
+    "title": "Number of Returns that Itemize Deductions",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A17000_agi2":{
+    "title": "Medical Expenses Deducted Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N17000_agi2":{
+    "title": "Number of Returns that Deduct Medical Expenses",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04800_agi2":{
+    "title": "Taxable Income Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04800_agi2":{
+    "title": "Number of Returns with Nonzero Taxable Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A05800_agi2":{
+    "title": "Regular Tax Before Credits Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N05800_agi2":{
+    "title": "Number of Returns with Nonzero Regular Tax Before Credits",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A09600_agi2":{
+    "title": "AMT Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N09600_agi2":{
+    "title": "Number of Returns with Nonzero AMT",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00700_agi2":{
+    "title": "SALT Deduction Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00700_agi2":{
+    "title": "Number of Returns with Nonzero SALT Deduction",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 2 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N1_agi3":{
+    "title": "Population",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS1_agi3":{
+    "title": "Number of Single Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS2_agi3":{
+    "title": "Number of Joint Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00100_agi3":{
+    "title": "AGI Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00200_agi3":{
+    "title": "Salary and Wage Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00200_agi3":{
+    "title": "Number of Returns with Nonzero Salary and Wage",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01000_agi3":{
+    "title": "Capital Gains Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N01000_agi3":{
+    "title": "Number of Returns with Nonzero Capital Gains",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04470_agi3":{
+    "title": "Itemized Deduction Amount (0 if Standard Deduction)",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04470_agi3":{
+    "title": "Number of Returns that Itemize Deductions",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A17000_agi3":{
+    "title": "Medical Expenses Deducted Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N17000_agi3":{
+    "title": "Number of Returns that Deduct Medical Expenses",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04800_agi3":{
+    "title": "Taxable Income Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04800_agi3":{
+    "title": "Number of Returns with Nonzero Taxable Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A05800_agi3":{
+    "title": "Regular Tax Before Credits Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N05800_agi3":{
+    "title": "Number of Returns with Nonzero Regular Tax Before Credits",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A09600_agi3":{
+    "title": "AMT Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N09600_agi3":{
+    "title": "Number of Returns with Nonzero AMT",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00700_agi3":{
+    "title": "SALT Deduction Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00700_agi3":{
+    "title": "Number of Returns with Nonzero SALT Deduction",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 3 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N1_agi4":{
+    "title": "Population",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS1_agi4":{
+    "title": "Number of Single Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS2_agi4":{
+    "title": "Number of Joint Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00100_agi4":{
+    "title": "AGI Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00200_agi4":{
+    "title": "Salary and Wage Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00200_agi4":{
+    "title": "Number of Returns with Nonzero Salary and Wage",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01000_agi4":{
+    "title": "Capital Gains Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N01000_agi4":{
+    "title": "Number of Returns with Nonzero Capital Gains",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04470_agi4":{
+    "title": "Itemized Deduction Amount (0 if Standard Deduction)",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04470_agi4":{
+    "title": "Number of Returns that Itemize Deductions",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A17000_agi4":{
+    "title": "Medical Expenses Deducted Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N17000_agi4":{
+    "title": "Number of Returns that Deduct Medical Expenses",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04800_agi4":{
+    "title": "Taxable Income Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04800_agi4":{
+    "title": "Number of Returns with Nonzero Taxable Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A05800_agi4":{
+    "title": "Regular Tax Before Credits Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N05800_agi4":{
+    "title": "Number of Returns with Nonzero Regular Tax Before Credits",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A09600_agi4":{
+    "title": "AMT Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N09600_agi4":{
+    "title": "Number of Returns with Nonzero AMT",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00700_agi4":{
+    "title": "SALT Deduction Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00700_agi4":{
+    "title": "Number of Returns with Nonzero SALT Deduction",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 4 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N1_agi5":{
+    "title": "Population",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS1_agi5":{
+    "title": "Number of Single Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS2_agi5":{
+    "title": "Number of Joint Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00100_agi5":{
+    "title": "AGI Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00200_agi5":{
+    "title": "Salary and Wage Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00200_agi5":{
+    "title": "Number of Returns with Nonzero Salary and Wage",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01000_agi5":{
+    "title": "Capital Gains Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N01000_agi5":{
+    "title": "Number of Returns with Nonzero Capital Gains",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04470_agi5":{
+    "title": "Itemized Deduction Amount (0 if Standard Deduction)",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04470_agi5":{
+    "title": "Number of Returns that Itemize Deductions",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A17000_agi5":{
+    "title": "Medical Expenses Deducted Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N17000_agi5":{
+    "title": "Number of Returns that Deduct Medical Expenses",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04800_agi5":{
+    "title": "Taxable Income Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04800_agi5":{
+    "title": "Number of Returns with Nonzero Taxable Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A05800_agi5":{
+    "title": "Regular Tax Before Credits Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N05800_agi5":{
+    "title": "Number of Returns with Nonzero Regular Tax Before Credits",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A09600_agi5":{
+    "title": "AMT Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N09600_agi5":{
+    "title": "Number of Returns with Nonzero AMT",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00700_agi5":{
+    "title": "SALT Deduction Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00700_agi5":{
+    "title": "Number of Returns with Nonzero SALT Deduction",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 5 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N1_agi6":{
+    "title": "Population",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS1_agi6":{
+    "title": "Number of Single Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS2_agi6":{
+    "title": "Number of Joint Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00100_agi6":{
+    "title": "AGI Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00200_agi6":{
+    "title": "Salary and Wage Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00200_agi6":{
+    "title": "Number of Returns with Nonzero Salary and Wage",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01000_agi6":{
+    "title": "Capital Gains Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N01000_agi6":{
+    "title": "Number of Returns with Nonzero Capital Gains",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04470_agi6":{
+    "title": "Itemized Deduction Amount (0 if Standard Deduction)",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04470_agi6":{
+    "title": "Number of Returns that Itemize Deductions",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A17000_agi6":{
+    "title": "Medical Expenses Deducted Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N17000_agi6":{
+    "title": "Number of Returns that Deduct Medical Expenses",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04800_agi6":{
+    "title": "Taxable Income Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04800_agi6":{
+    "title": "Number of Returns with Nonzero Taxable Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A05800_agi6":{
+    "title": "Regular Tax Before Credits Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N05800_agi6":{
+    "title": "Number of Returns with Nonzero Regular Tax Before Credits",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A09600_agi6":{
+    "title": "AMT Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N09600_agi6":{
+    "title": "Number of Returns with Nonzero AMT",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00700_agi6":{
+    "title": "SALT Deduction Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00700_agi6":{
+    "title": "Number of Returns with Nonzero SALT Deduction",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 6 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N1_agi7":{
+    "title": "Population",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS1_agi7":{
+    "title": "Number of Single Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS2_agi7":{
+    "title": "Number of Joint Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00100_agi7":{
+    "title": "AGI Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00200_agi7":{
+    "title": "Salary and Wage Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00200_agi7":{
+    "title": "Number of Returns with Nonzero Salary and Wage",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01000_agi7":{
+    "title": "Capital Gains Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N01000_agi7":{
+    "title": "Number of Returns with Nonzero Capital Gains",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04470_agi7":{
+    "title": "Itemized Deduction Amount (0 if Standard Deduction)",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04470_agi7":{
+    "title": "Number of Returns that Itemize Deductions",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A17000_agi7":{
+    "title": "Medical Expenses Deducted Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N17000_agi7":{
+    "title": "Number of Returns that Deduct Medical Expenses",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04800_agi7":{
+    "title": "Taxable Income Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04800_agi7":{
+    "title": "Number of Returns with Nonzero Taxable Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A05800_agi7":{
+    "title": "Regular Tax Before Credits Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N05800_agi7":{
+    "title": "Number of Returns with Nonzero Regular Tax Before Credits",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A09600_agi7":{
+    "title": "AMT Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N09600_agi7":{
+    "title": "Number of Returns with Nonzero AMT",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00700_agi7":{
+    "title": "SALT Deduction Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00700_agi7":{
+    "title": "Number of Returns with Nonzero SALT Deduction",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 7 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N1_agi8":{
+    "title": "Population",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS1_agi8":{
+    "title": "Number of Single Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS2_agi8":{
+    "title": "Number of Joint Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00100_agi8":{
+    "title": "AGI Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00200_agi8":{
+    "title": "Salary and Wage Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00200_agi8":{
+    "title": "Number of Returns with Nonzero Salary and Wage",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01000_agi8":{
+    "title": "Capital Gains Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N01000_agi8":{
+    "title": "Number of Returns with Nonzero Capital Gains",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04470_agi8":{
+    "title": "Itemized Deduction Amount (0 if Standard Deduction)",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04470_agi8":{
+    "title": "Number of Returns that Itemize Deductions",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A17000_agi8":{
+    "title": "Medical Expenses Deducted Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N17000_agi8":{
+    "title": "Number of Returns that Deduct Medical Expenses",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04800_agi8":{
+    "title": "Taxable Income Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04800_agi8":{
+    "title": "Number of Returns with Nonzero Taxable Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A05800_agi8":{
+    "title": "Regular Tax Before Credits Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N05800_agi8":{
+    "title": "Number of Returns with Nonzero Regular Tax Before Credits",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A09600_agi8":{
+    "title": "AMT Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N09600_agi8":{
+    "title": "Number of Returns with Nonzero AMT",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00700_agi8":{
+    "title": "SALT Deduction Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00700_agi8":{
+    "title": "Number of Returns with Nonzero SALT Deduction",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 8 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N1_agi9":{
+    "title": "Population",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS1_agi9":{
+    "title": "Number of Single Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS2_agi9":{
+    "title": "Number of Joint Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00100_agi9":{
+    "title": "AGI Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00200_agi9":{
+    "title": "Salary and Wage Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00200_agi9":{
+    "title": "Number of Returns with Nonzero Salary and Wage",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01000_agi9":{
+    "title": "Capital Gains Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N01000_agi9":{
+    "title": "Number of Returns with Nonzero Capital Gains",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04470_agi9":{
+    "title": "Itemized Deduction Amount (0 if Standard Deduction)",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04470_agi9":{
+    "title": "Number of Returns that Itemize Deductions",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A17000_agi9":{
+    "title": "Medical Expenses Deducted Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N17000_agi9":{
+    "title": "Number of Returns that Deduct Medical Expenses",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04800_agi9":{
+    "title": "Taxable Income Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04800_agi9":{
+    "title": "Number of Returns with Nonzero Taxable Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A05800_agi9":{
+    "title": "Regular Tax Before Credits Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N05800_agi9":{
+    "title": "Number of Returns with Nonzero Regular Tax Before Credits",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A09600_agi9":{
+    "title": "AMT Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N09600_agi9":{
+    "title": "Number of Returns with Nonzero AMT",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00700_agi9":{
+    "title": "SALT Deduction Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00700_agi9":{
+    "title": "Number of Returns with Nonzero SALT Deduction",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 9 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N1_agi10":{
+    "title": "Population",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS1_agi10":{
+    "title": "Number of Single Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS2_agi10":{
+    "title": "Number of Joint Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00100_agi10":{
+    "title": "AGI Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00200_agi10":{
+    "title": "Salary and Wage Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00200_agi10":{
+    "title": "Number of Returns with Nonzero Salary and Wage",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01000_agi10":{
+    "title": "Capital Gains Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N01000_agi10":{
+    "title": "Number of Returns with Nonzero Capital Gains",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04470_agi10":{
+    "title": "Itemized Deduction Amount (0 if Standard Deduction)",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04470_agi10":{
+    "title": "Number of Returns that Itemize Deductions",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A17000_agi10":{
+    "title": "Medical Expenses Deducted Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N17000_agi10":{
+    "title": "Number of Returns that Deduct Medical Expenses",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04800_agi10":{
+    "title": "Taxable Income Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N04800_agi10":{
+    "title": "Number of Returns with Nonzero Taxable Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A05800_agi10":{
+    "title": "Regular Tax Before Credits Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N05800_agi10":{
+    "title": "Number of Returns with Nonzero Regular Tax Before Credits",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A09600_agi10":{
+    "title": "AMT Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N09600_agi10":{
+    "title": "Number of Returns with Nonzero AMT",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00700_agi10":{
+    "title": "SALT Deduction Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "N00700_agi10":{
+    "title": "Number of Returns with Nonzero SALT Deduction",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Income Group 10 Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  }
+}

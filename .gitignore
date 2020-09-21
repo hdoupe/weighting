@@ -3,3 +3,23 @@ puf/ignore/
 puf/downloads/
 *.out
 *.h5
+
+# Byte-compiled / optimized / DLL files
+*__pycache__/
+
+# Unit test / coverage reports
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Sphinx documentation
+read-the-docs/_build/
+
+# Mac OS X
+*.DS_Store
+
+# IRS-SOI PUF data file
+puf.csv
+
+# Jupyter notebook checkpoints
+*.ipynb_checkpoints*
