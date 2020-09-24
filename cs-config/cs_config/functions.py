@@ -43,7 +43,7 @@ def run_model(meta_param_dict, adjustment):
 
     p = PrepData(adjustment=adjustment, reweighted=puf_df)
 
-    if "N1" not in data.targ_list:
+    if "N1" not in p.targ_list:
         data = p.puf_advance_filter.drop(columns=['AGI_STUB','s006','pid','N1'])
         state_targets = p.targets_wide.drop(columns=['AGI_STUB','STATE','N1_targ'])
     else:
