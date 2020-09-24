@@ -13,19 +13,14 @@ AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY", "")
 
 
 def get_version():
-    return "0.0.0"
+    return "0.0.1"
 
 
 def get_inputs(meta_param_dict):
     params = TAXDATA_PARAMS()
     params.specification(serializable=True)
 
-    filtered_params = OrderedDict()
-    for k, v in params.dump().items():
-        if k != "schema":
-            filtered_params[k] = v
-
-    default_params = {"Choose Targets": filtered_params}
+    default_params = {"Choose Targets": params.dump()}
 
     return {"meta_parameters": {}, "model_parameters": default_params}
 
