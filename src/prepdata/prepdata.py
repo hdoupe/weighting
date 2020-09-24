@@ -9,7 +9,7 @@ CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 
 class TAXDATA_PARAMS(paramtools.Parameters):
-    defaults = os.path.join(CURRENT_PATH, "defaults.json")
+    defaults = os.path.join(CURRENT_PATH, "defaults_reweight.json")
 
 
 class PrepData:
@@ -65,6 +65,10 @@ class PrepData:
         "c00100",
         "mars1",
         "mars2",
+        "e00300",
+        "e00600",
+        "e02400",
+        "c04800"
     ]
 
     # AGI groups to target separately
@@ -94,17 +98,25 @@ class PrepData:
         "e00700_n": "N00700",  # SALT number
     }
 
-    def __init__(self, adjustment={}, puf_df=None):
+    def __init__(self, adjustment={}, year=2018, puf_df=None, reweighted=None):
 
         CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
-        HT2_PATH = os.path.join(CURRENT_PATH, "data/17in54cmcsv.csv")
+        HT2_PATH_2017 = os.path.join(CURRENT_PATH, "data/17in54cmcsv.csv")
+        HT2_PATH_2018 = os.path.join(CURRENT_PATH, "data/18in55cmagi.csv")
+
+        assert year in [2017, 2018]
 
         self.puf_df = puf_df
-        self.ht2_path = HT2_PATH
+        if year == 2017:
+            self.ht2_path = HT2_PATH_2017
+        elif year == 2018:
+            self.ht2_path = HT2_PATH_2018
+        self.year = year
+        self.reweighted = reweighted
         self.params = TAXDATA_PARAMS()
         self.params.adjust(adjustment)
         self.AGI_STUB, self.targ_list, self.var_list = self.choose_targets()
-        self.puf_2017_filter = self.prepare_puf()
+        self.puf_advance_filter = self.prepare_puf()
         self.puf_sum = self.puf_summary()
         self.ratio_df = self.calc_ratios()
         self.targets_wide = self.state_targets_wide()
@@ -135,78 +147,90 @@ class PrepData:
         indicator variables, and is filtered for AGI group and target variables.
         """
 
-        def puf_to_2017():
-            """
-            Extrapolate PUF to 2017
-            """
-            pol = Policy()
-            if self.puf_df is None:
-                recs = Records()
-            else:
-                assert isinstance(self.puf_df, pd.DataFrame)
-                recs = Records(self.puf_df)
-            calc = Calculator(pol, recs)
-            calc.advance_to_year(2017)
-            calc.calc_all()
-
-            puf_cps_2017 = calc.dataframe(variable_list=[], all_vars=True)
-            # filter out filers imputed from CPS
-            puf_2017 = puf_cps_2017.copy()
-            puf_2017 = puf_2017.loc[puf_2017["data_source"] == 1]
-            # create unique variable for personal ID
-            puf_2017["pid"] = np.arange(len(puf_2017)) + 1
-            return puf_2017
-
-        def puf_indicators():
-            """
-            Create indicator variables (i.e. 1 when a condition is met, 0
-            otherwise). These variables are needed for targeting "count"
-            aggregates (i.e. number of returns that meet a condition).
-            """
-            puf_2017 = puf_to_2017()
-            for var in self.POSSIBLE_TARGET_VARS:
-                count_var = var + "_n"
-                # Positive AGI. Note that unlike other variables, we count positive
-                # AGI as opposed to non-negative to line up with HT2 variables
-                if var == "c00100":
-                    puf_2017[count_var] = np.where(puf_2017[var] > 1, 1, 0)
-                # Marital status
-                elif var == "mars1":
-                    puf_2017["mars1_n"] = np.where(puf_2017.MARS == 1, 1, 0)
-                elif var == "mars2":
-                    puf_2017["mars2_n"] = np.where(puf_2017.MARS == 2, 1, 0)
-                # All other possible target variables
+        if self.reweighted is None:
+            def advance_puf():
+                """
+                Extrapolate PUF to 2017/2018
+                """
+                pol = Policy()
+                if self.puf_df is None:
+                    recs = Records()
                 else:
-                    puf_2017[count_var] = np.where(puf_2017[var] != 0, 1, 0)
+                    assert isinstance(self.puf_df, pd.DataFrame)
+                    recs = Records(self.puf_df)
+                calc = Calculator(pol, recs)
+                if self.year == 2018:
+                    calc.advance_to_year(2018)
+                elif self.year == 2017:
+                    calc.advance_to_year(2017)
+                calc.calc_all()
 
-            # Sort PUF filers into AGI bins (same bins as HT2)
-            puf_2017["AGI_STUB"] = pd.cut(
-                puf_2017["c00100"],
-                self.HT2_AGI_STUBS,
-                labels=list(range(1, 11)),
-                right=False,
-            )
-            puf_2017["n1"] = 1
+                puf_cps_advance = calc.dataframe(variable_list=[], all_vars=True)
+                # filter out filers imputed from CPS
+                puf_advance = puf_cps_advance.copy()
+                puf_advance = puf_advance.loc[puf_advance["data_source"] == 1]
+                # create unique variable for personal ID
+                puf_advance["pid"] = np.arange(len(puf_advance)) + 1
+                return puf_advance
 
-            # Rename variables to align with HT2 names
-            puf_2017.rename(columns=self.VAR_CROSSWALK, inplace=True)
+            def puf_indicators():
+                """
+                Create indicator variables (i.e. 1 when a condition is met, 0
+                otherwise). These variables are needed for targeting "count"
+                aggregates (i.e. number of returns that meet a condition).
+                """
+                puf_advance = advance_puf()
+                for var in self.POSSIBLE_TARGET_VARS:
+                    count_var = var + "_n"
+                    # Positive AGI. Note that unlike other variables, we count positive
+                    # AGI as opposed to non-negative to line up with HT2 variables
+                    if var == "c00100":
+                        puf_advance[count_var] = np.where(puf_advance[var] > 1, 1, 0)
+                    # Marital status
+                    elif var == "mars1":
+                        puf_advance["mars1_n"] = np.where(puf_advance.MARS == 1, 1, 0)
+                    elif var == "mars2":
+                        puf_advance["mars2_n"] = np.where(puf_advance.MARS == 2, 1, 0)
+                    # All other possible target variables
+                    else:
+                        puf_advance[count_var] = np.where(puf_advance[var] != 0, 1, 0)
 
-            return puf_2017
+                # Sort PUF filers into AGI bins (same bins as HT2)
+                puf_advance["AGI_STUB"] = pd.cut(
+                    puf_advance["c00100"],
+                    self.HT2_AGI_STUBS,
+                    labels=list(range(1, 11)),
+                    right=False,
+                )
+                puf_advance["n1"] = 1
+
+                # Rename variables to align with HT2 names
+                puf_advance.rename(columns=self.VAR_CROSSWALK, inplace=True)
+
+                return puf_advance
+
+
 
         def filter_puf(self):
             """
             Filter PUF for target variables and AGI group
             """
-            puf_2017 = puf_indicators()
+            if self.reweighted is None:
+                puf_advance = puf_indicators()
+            else:
+                if isinstance(self.reweighted, pd.Dataframe):
+                    puf_advance = self.reweighted
+                else:
+                    puf_advance = pd.read_csv(self.reweighted)
             keep_list = list(self.var_list)
             additional_vars = ["AGI_STUB", "s006", "pid"]
             keep_list.extend(additional_vars)
 
-            puf_2017_filter = puf_2017[keep_list]
-            puf_2017_filter = puf_2017_filter[
-                puf_2017_filter["AGI_STUB"] == self.AGI_STUB
+            puf_advance_filter = puf_advance[keep_list]
+            puf_advance_filter = puf_advance_filter[
+                puf_advance_filter["AGI_STUB"] == self.AGI_STUB
             ]
-            return puf_2017_filter
+            return puf_advance_filter
 
         return filter_puf(self)
 
@@ -215,7 +239,7 @@ class PrepData:
         Calculate weighted totals for each target variable within the
         given AGI group.
         """
-        puf_summary_temp = self.puf_2017_filter.copy()
+        puf_summary_temp = self.puf_advance_filter.copy()
         puf_summary = pd.DataFrame()
 
         for var in self.var_list:
@@ -334,11 +358,11 @@ class PrepData:
             state weights add up to national weight).
             """
             # The constraint name is a unique personal ID (e.g. "p00000001")
-            cname_pid = self.puf_2017_filter["pid"].astype(str)
+            cname_pid = self.puf_advance_filter["pid"].astype(str)
             cname_pid = "p" + cname_pid.str.zfill(8)
             targets_add_up = pd.DataFrame()
-            targets_add_up["pid"] = self.puf_2017_filter["pid"]
-            targets_add_up["value"] = self.puf_2017_filter["s006"]
+            targets_add_up["pid"] = self.puf_advance_filter["pid"]
+            targets_add_up["value"] = self.puf_advance_filter["s006"]
             # Create a new variable that distinguishes aggregate targets from
             # add-up targets
             targets_add_up["targtype"] = "addup"
@@ -378,8 +402,8 @@ class PrepData:
         iweights = pd.DataFrame()
         for state in states:
             state_df = pd.DataFrame()
-            state_df["pid"] = self.puf_2017_filter["pid"]
-            state_df["weight_total"] = self.puf_2017_filter["s006"]
+            state_df["pid"] = self.puf_advance_filter["pid"]
+            state_df["weight_total"] = self.puf_advance_filter["s006"]
             state_df["STATE"] = state
             iweights = pd.concat([iweights, state_df])
         iweights = iweights.merge(state_shares, on="STATE")
@@ -394,7 +418,7 @@ class PrepData:
         """
         cc_dense = self.iweights[["pid", "STATE", "iweight_state"]].copy()
         # Use PID to match initial weights with weighted targets
-        cc_dense = cc_dense.merge(self.puf_2017_filter, on="pid")
+        cc_dense = cc_dense.merge(self.puf_advance_filter, on="pid")
         for var in self.targ_list:
             state_var = var + "_targ"
             cc_dense[state_var] = cc_dense[var] * cc_dense["iweight_state"]
@@ -530,7 +554,7 @@ class PrepData:
         # Filter for US
         ht2_us = ht2[ht2["STATE"] == "US"]
 
-        puf_temp = self.puf_2017_filter.copy()
+        puf_temp = self.puf_advance_filter.copy()
         compare_df = pd.DataFrame()
         # Loop through target variables
         for var in self.var_list:

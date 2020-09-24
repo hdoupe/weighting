@@ -1,0 +1,161 @@
+{
+  "schema": {
+    "labels":{},
+    "additional_members": {
+            "section_1": {
+                "type": "str",
+                "number_dims": 0
+            }
+        }
+
+  },
+  "AGI_STUB":{
+    "title": "AGI Group to Target",
+    "description": "Filing units are organized into 10 AGI bins, as defined by Historical Table 2.",
+    "type": "int",
+    "section_1": "AGI Group",
+    "value": [
+      {
+        "value": 1
+      }
+    ],
+    "validators": {
+      "range": {
+        "min": 1,
+        "max": 10
+      }
+    }
+  },
+  "N1_targ":{
+    "title": "Population",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS1_targ":{
+    "title": "Number of Single Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "MARS2_targ":{
+    "title": "Number of Joint Returns",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00100_targ":{
+    "title": "AGI Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00200_targ":{
+    "title": "Salary and Wage Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00300_targ":{
+    "title": "Taxable Interest Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A00600_targ":{
+    "title": "Ordinary Dividends",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01000_targ":{
+    "title": "Capital Gains Amount",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A02500_targ":{
+    "title": "Social Security Benefits",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A04800_targ":{
+    "title": "Regular Taxable Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  },
+  "A01750_targ":{
+    "title": "IRA and Pension Income",
+    "description": "Add to targets.",
+    "type": "bool",
+    "section_1": "Targets",
+    "value": [
+      {
+        "value": false
+      }
+    ],
+    "validators": {}
+  }
+}
