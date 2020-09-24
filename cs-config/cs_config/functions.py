@@ -1,7 +1,6 @@
 import os
 import paramtools
 from .helpers import retrieve_puf
-import src
 from src.geoweight import Geoweight
 from src.prepdata.prepdata import TAXDATA_PARAMS, PrepData
 from collections import OrderedDict
@@ -12,8 +11,7 @@ AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY", "")
 
 
 def get_version():
-    version = src.__version__
-    return f"geoweight v{version}"
+    return "0.0.0"
 
 
 def get_inputs(meta_param_dict):
@@ -43,7 +41,7 @@ def run_model(meta_param_dict, adjustment):
     adjustment = params.adjust(adjustment["Choose Targets"])
     puf_df = retrieve_puf(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
 
-    p = prepdata.PrepData(adjustment=adjustment, reweighted=puf_df)
+    p = PrepData(adjustment=adjustment, reweighted=puf_df)
 
     if "N1" not in data.targ_list:
         data = p.puf_advance_filter.drop(columns=['AGI_STUB','s006','pid','N1'])

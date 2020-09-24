@@ -1,4 +1,3 @@
-from state_taxdata.prepdata import PrepData
+from .prepdata import PrepData
 
-name = "state_taxdata"
 __version__ = "0.0.0"

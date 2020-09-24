@@ -9,11 +9,11 @@ class TestFunctions1(CoreTestFunctions):
     validate_inputs = functions.validate_inputs
     run_model = functions.run_model
     ok_adjustment = {
-        "Data Preparation": {
+        "Choose Targets": {
             "AGI_STUB": [{"value": 7}],
             "MARS1_targ": [{"value": True}],
         }
     }
     bad_adjustment = {
-        "Data Preparation": {"AGI_STUB": [{"value": 11}], "MARS1_targ": [{"value": 6}]}
+        "Choose Targets": {"AGI_STUB": [{"value": 11}], "MARS1_targ": [{"value": 6}]}
     }
