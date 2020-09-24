@@ -22,7 +22,7 @@ def get_inputs(meta_param_dict):
 
     filtered_params = OrderedDict()
     for k, v in params.dump().items():
-        if k == "schema":
+        if k != "schema":
             filtered_params[k] = v
 
     default_params = {"Choose Targets": filtered_params}
