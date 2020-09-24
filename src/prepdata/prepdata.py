@@ -218,7 +218,7 @@ class PrepData:
             if self.reweighted is None:
                 puf_advance = puf_indicators()
             else:
-                if isinstance(self.reweighted, pd.Dataframe):
+                if isinstance(self.reweighted, pd.DataFrame):
                     puf_advance = self.reweighted
                 else:
                     puf_advance = pd.read_csv(self.reweighted)
