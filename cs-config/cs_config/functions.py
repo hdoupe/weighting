@@ -1,6 +1,7 @@
 import os
 import paramtools
 import pandas as pd
+import numpy as np
 from .helpers import retrieve_puf
 from src.geoweight import Geoweight
 from src.prepdata.prepdata import TAXDATA_PARAMS, PrepData
