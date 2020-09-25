@@ -9,6 +9,7 @@ Created on Sat Aug 29 04:55:45 2020
 import numpy as np
 from scipy.optimize import least_squares
 from timeit import default_timer as timer
+from src.prepdata.prepdata import TAXDATA_PARAMS
 
 
 class Geoweight:
@@ -34,13 +35,18 @@ class Geoweight:
 
     """
 
-    def __init__(self, wh, xmat, geotargets=None):
+    def __init__(self, wh, xmat, geotargets=None, adjustment={}):
 
         self.wh = wh
         self.xmat = xmat
         self.geotargets = geotargets
+        self.params = TAXDATA_PARAMS()
+        self.params.adjust(adjustment)
 
     def geoweight(self):
+        ftol = self.params.to_array("ftol")
+        max_nfev = self.params.to_array("max_nfev")
+
         start = timer()
         h = self.xmat.shape[0]
         k = self.xmat.shape[1]
@@ -54,6 +60,7 @@ class Geoweight:
 
         result = least_squares(targets_diff, betavec0,
                      method='trf', jac='2-point', verbose=2,
+                     ftol=ftol, max_nfev=max_nfev,
                      args=(self.wh, self.xmat, self.geotargets, dw))
         self.result = result
         end = timer()

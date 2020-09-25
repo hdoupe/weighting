@@ -9,6 +9,40 @@
         }
 
   },
+  "ftol":{
+    "title": "Tolerance for termination by change of cost function",
+    "description": "Tolerance for termination by change of cost function",
+    "type": "float",
+    "section_1": "Solver Settings",
+    "value": [
+      {
+        "value": 1e-4
+      }
+    ],
+    "validators": {
+      "range": {
+        "min": 1e-8,
+        "max": 0.1
+      }
+    }
+  },
+  "max_nfev":{
+    "title": "Maximum number of function evaluation before termination",
+    "description": "Maximum number of function evaluation before termination",
+    "type": "int",
+    "section_1": "Solver Settings",
+    "value": [
+      {
+        "value": 1000
+      }
+    ],
+    "validators": {
+      "range": {
+        "min": 5,
+        "max": 5000
+      }
+    }
+  },
   "AGI_STUB":{
     "title": "AGI Group to Target",
     "description": "Filing units are organized into 10 AGI bins, as defined by Historical Table 2.",
