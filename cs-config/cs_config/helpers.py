@@ -1,26 +1,23 @@
-try:
-    import boto3
-except ImportError:
-    boto3 = None
-import gzip
-import csv
+import os
 import pandas as pd
+import fsspec
+from pathlib import Path
 
 
-def retrieve_puf(aws_access_key_id, aws_secret_access_key):
+AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID", "")
+AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY", "")
+
+
+def retrieve_puf():
     """
-    Function for retrieving the PUF from the OSPC S3 bucket
+    Retrieves PUF from AWS if available. Otherwise tries to read it
+    from a local file.
     """
-    has_credentials = aws_access_key_id and aws_secret_access_key
-    if has_credentials and boto3 is not None:
-        client = boto3.client(
-            "s3",
-            aws_access_key_id=aws_access_key_id,
-            aws_secret_access_key=aws_secret_access_key,
-        )
-        obj = client.get_object(Bucket="ospc-data-files", Key="puf2018_reweighted_v2.csv.gz")
-        gz = gzip.GzipFile(fileobj=obj["Body"])
-        puf_df = pd.read_csv(gz)
-        return puf_df
+    if AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
+        return pd.read_csv("s3://ospc-data-files/puf2018_reweighted_v2.csv.gz")
+    elif Path("puf2018_reweighted_v2.csv.gz").exists():
+        return pd.read_csv("puf2018_reweighted_v2.csv.gz")
+    elif Path("puf2018_reweighted_v2.csv").exists():
+        return pd.read_csv("puf2018_reweighted_v2.csv.gz")
     else:
-        return None
+        raise FileNotFoundError("Unable to get PUF file.")
