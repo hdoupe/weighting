@@ -68,7 +68,7 @@ def run_model(meta_param_dict, adjustment):
     message = gw.result.message
 
     pdiff = (gw.geotargets_opt - gw.geotargets) / gw.geotargets * 100
-    pdiff = round(pdiff, 2)
+    pdiff = pdiff.round(2)
 
     targs = p.targ_list
     states = p.targets_wide["STATE"]
@@ -81,7 +81,7 @@ def run_model(meta_param_dict, adjustment):
 
     wh_opt = gw.whs_opt.sum(axis=1)  # sum of optimal state weights for each household
     pdiff2 = (wh_opt - gw.wh) / gw.wh * 100
-    pdiff2 = round(pdiff2, 2)
+    pdiff2 = pdiff2.round(2)
 
     message = f"Sum of squared percentage difference from target: {np.square(pdiff).sum()}. <br><br>"
     message += f"Sum of squared percentage difference between state weights and national weights: {np.square(pdiff2).sum()}."
