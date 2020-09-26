@@ -18,6 +18,6 @@ def retrieve_puf():
     elif Path("puf2018_reweighted_v2.csv.gz").exists():
         return pd.read_csv("puf2018_reweighted_v2.csv.gz")
     elif Path("puf2018_reweighted_v2.csv").exists():
-        return pd.read_csv("puf2018_reweighted_v2.csv.gz")
+        return pd.read_csv("puf2018_reweighted_v2.csv")
     else:
         raise FileNotFoundError("Unable to get PUF file.")
